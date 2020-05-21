@@ -161,4 +161,147 @@ Wire Wire Line
 	4400 3300 4400 3100
 Wire Wire Line
 	4400 3100 4600 3100
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5EC6D021
+P 4450 4800
+F 0 "J?" H 4750 5300 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4200 5300 50  0000 C CNN
+F 2 "" H 4450 4800 50  0001 C CNN
+F 3 "~" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4900 4250 4800
+Connection ~ 4250 4800
+Wire Wire Line
+	4250 4800 4250 4700
+Wire Wire Line
+	4750 4700 4750 4800
+Connection ~ 4750 4800
+Wire Wire Line
+	4750 4800 4750 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5EC6F187
+P 6050 4800
+F 0 "#PWR?" H 6050 4550 50  0001 C CNN
+F 1 "GND" H 6055 4627 50  0000 C CNN
+F 2 "" H 6050 4800 50  0001 C CNN
+F 3 "" H 6050 4800 50  0001 C CNN
+	1    6050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4800 4050 4800
+Wire Wire Line
+	4250 4600 4150 4600
+Wire Wire Line
+	4150 4600 4150 4500
+Wire Wire Line
+	4150 4500 4850 4500
+Wire Wire Line
+	4850 4500 4850 4600
+Wire Wire Line
+	4850 4600 4750 4600
+Wire Wire Line
+	4250 5000 4150 5000
+Wire Wire Line
+	4150 5000 4150 5100
+Wire Wire Line
+	4150 5100 4850 5100
+Wire Wire Line
+	4850 5100 4850 5000
+Wire Wire Line
+	4850 5000 4750 5000
+$Comp
+L Device:CP C?
+U 1 1 5EC72C83
+P 5150 4650
+F 0 "C?" H 5268 4696 50  0000 L CNN
+F 1 "22u" H 5268 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 5188 4500 50  0001 C CNN
+F 3 "~" H 5150 4650 50  0001 C CNN
+F 4 "647-UWT1E220MCL1B" H 5150 4650 50  0001 C CNN "Mouser"
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC731D9
+P 5600 4650
+F 0 "C?" V 5348 4650 50  0000 C CNN
+F 1 "100n" V 5439 4650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 4500 50  0001 C CNN
+F 3 "~" H 5600 4650 50  0001 C CNN
+F 4 " 80-C0805C104K5RACLR" V 5600 4650 50  0001 C CNN "Mouser"
+	1    5600 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 4500 5150 4500
+Connection ~ 4850 4500
+Connection ~ 5150 4500
+Wire Wire Line
+	5150 4500 5600 4500
+Connection ~ 4850 5100
+Text GLabel 5950 5100 2    50   Input ~ 0
+Vee
+Text GLabel 5950 4500 2    50   Input ~ 0
+Vcc
+Wire Wire Line
+	5950 4500 5600 4500
+Connection ~ 5600 4500
+Connection ~ 5150 4800
+Wire Wire Line
+	5150 4800 5600 4800
+Connection ~ 5600 4800
+Wire Wire Line
+	5600 4800 6050 4800
+Wire Wire Line
+	4850 5100 5150 5100
+$Comp
+L Device:CP C?
+U 1 1 5EC7F6E5
+P 5150 4950
+F 0 "C?" H 5268 4996 50  0000 L CNN
+F 1 "22u" H 5268 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 5188 4800 50  0001 C CNN
+F 3 "~" H 5150 4950 50  0001 C CNN
+F 4 "647-UWT1E220MCL1B" H 5150 4950 50  0001 C CNN "Mouser"
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 5100
+Wire Wire Line
+	4750 4800 5150 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5EC7FEB8
+P 4050 4800
+F 0 "#PWR?" H 4050 4550 50  0001 C CNN
+F 1 "GND" H 4055 4627 50  0000 C CNN
+F 2 "" H 4050 4800 50  0001 C CNN
+F 3 "" H 4050 4800 50  0001 C CNN
+	1    4050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5100 5600 5100
+$Comp
+L Device:C C?
+U 1 1 5EC8D523
+P 5600 4950
+F 0 "C?" V 5348 4950 50  0000 C CNN
+F 1 "100n" V 5439 4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 4800 50  0001 C CNN
+F 3 "~" H 5600 4950 50  0001 C CNN
+F 4 " 80-C0805C104K5RACLR" V 5600 4950 50  0001 C CNN "Mouser"
+	1    5600 4950
+	-1   0    0    1   
+$EndComp
+Connection ~ 5600 5100
+Wire Wire Line
+	5600 5100 5950 5100
 $EndSCHEMATC
