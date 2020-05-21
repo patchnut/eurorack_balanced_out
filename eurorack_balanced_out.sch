@@ -414,4 +414,75 @@ F 3 "~" H 3650 2900 50  0001 C CNN
 	1    3650 2900
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5ECBA746
+P 7000 1400
+F 0 "J?" H 6720 1333 50  0000 R CNN
+F 1 "AudioJack3" H 6720 1424 50  0000 R CNN
+F 2 "" H 7000 1400 50  0001 C CNN
+F 3 "~" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 1300 5700 1300
+Connection ~ 5700 1300
+Wire Wire Line
+	6800 1400 6100 1400
+Wire Wire Line
+	6100 1400 6100 1500
+Wire Wire Line
+	6100 1500 5700 1500
+Connection ~ 5700 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5ECC7C45
+P 6650 1650
+F 0 "#PWR?" H 6650 1400 50  0001 C CNN
+F 1 "GND" H 6655 1477 50  0000 C CNN
+F 2 "" H 6650 1650 50  0001 C CNN
+F 3 "" H 6650 1650 50  0001 C CNN
+	1    6650 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1500 6650 1500
+Wire Wire Line
+	6650 1500 6650 1650
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5ECCD754
+P 7000 3000
+F 0 "J?" H 6720 2933 50  0000 R CNN
+F 1 "AudioJack3" H 6720 3024 50  0000 R CNN
+F 2 "" H 7000 3000 50  0001 C CNN
+F 3 "~" H 7000 3000 50  0001 C CNN
+	1    7000 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 2900 5700 2900
+Wire Wire Line
+	6800 3000 6100 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCD75C
+P 6650 3250
+F 0 "#PWR?" H 6650 3000 50  0001 C CNN
+F 1 "GND" H 6655 3077 50  0000 C CNN
+F 2 "" H 6650 3250 50  0001 C CNN
+F 3 "" H 6650 3250 50  0001 C CNN
+	1    6650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3100 6650 3100
+Wire Wire Line
+	6650 3100 6650 3250
+Wire Wire Line
+	5700 3100 6100 3100
+Wire Wire Line
+	6100 3100 6100 3000
+Connection ~ 5700 3100
 $EndSCHEMATC
