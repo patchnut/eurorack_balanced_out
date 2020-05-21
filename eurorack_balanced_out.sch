@@ -75,18 +75,14 @@ Vcc
 $Comp
 L power:GND #PWR?
 U 1 1 5EC6D54F
-P 4400 1700
-F 0 "#PWR?" H 4400 1450 50  0001 C CNN
-F 1 "GND" H 4405 1527 50  0000 C CNN
-F 2 "" H 4400 1700 50  0001 C CNN
-F 3 "" H 4400 1700 50  0001 C CNN
-	1    4400 1700
+P 3850 1750
+F 0 "#PWR?" H 3850 1500 50  0001 C CNN
+F 1 "GND" H 3855 1577 50  0000 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "" H 3850 1750 50  0001 C CNN
+	1    3850 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 1700 4400 1500
-Wire Wire Line
-	4400 1500 4600 1500
 $Comp
 L patchut:THAT1646W16 U?
 U 1 1 5EC6EB1D
@@ -146,21 +142,6 @@ Text GLabel 4800 3450 3    50   Input ~ 0
 Vee
 Text GLabel 4800 2550 1    50   Input ~ 0
 Vcc
-$Comp
-L power:GND #PWR?
-U 1 1 5EC6EB3D
-P 4400 3300
-F 0 "#PWR?" H 4400 3050 50  0001 C CNN
-F 1 "GND" H 4405 3127 50  0000 C CNN
-F 2 "" H 4400 3300 50  0001 C CNN
-F 3 "" H 4400 3300 50  0001 C CNN
-	1    4400 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 3300 4400 3100
-Wire Wire Line
-	4400 3100 4600 3100
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5EC6D021
@@ -304,4 +285,133 @@ $EndComp
 Connection ~ 5600 5100
 Wire Wire Line
 	5600 5100 5950 5100
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EC8DDA9
+P 3150 1300
+F 0 "J?" H 3068 1517 50  0000 C CNN
+F 1 "Conn_01x02" H 3068 1426 50  0000 C CNN
+F 2 "" H 3150 1300 50  0001 C CNN
+F 3 "~" H 3150 1300 50  0001 C CNN
+	1    3150 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EC8E9B6
+P 3650 1300
+F 0 "R?" V 3443 1300 50  0000 C CNN
+F 1 "3.9k" V 3534 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 1300 3350 1300
+Wire Wire Line
+	3800 1300 3850 1300
+Wire Wire Line
+	3850 1350 3850 1300
+Connection ~ 3850 1300
+Wire Wire Line
+	3850 1300 4600 1300
+Wire Wire Line
+	3850 1650 3850 1700
+Connection ~ 3850 1700
+Wire Wire Line
+	3850 1700 3850 1750
+Wire Wire Line
+	3350 1400 3450 1400
+Wire Wire Line
+	3450 1400 3450 1700
+Wire Wire Line
+	3450 1700 3850 1700
+Wire Wire Line
+	4600 1500 4300 1500
+Wire Wire Line
+	4300 1500 4300 1700
+Wire Wire Line
+	3850 1700 4300 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5ECB48AD
+P 3850 3350
+F 0 "#PWR?" H 3850 3100 50  0001 C CNN
+F 1 "GND" H 3855 3177 50  0000 C CNN
+F 2 "" H 3850 3350 50  0001 C CNN
+F 3 "" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5ECB48B3
+P 3150 2900
+F 0 "J?" H 3068 3117 50  0000 C CNN
+F 1 "Conn_01x02" H 3068 3026 50  0000 C CNN
+F 2 "" H 3150 2900 50  0001 C CNN
+F 3 "~" H 3150 2900 50  0001 C CNN
+	1    3150 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2900 3350 2900
+Wire Wire Line
+	3800 2900 3850 2900
+Wire Wire Line
+	3850 2950 3850 2900
+Connection ~ 3850 2900
+Wire Wire Line
+	3850 2900 4600 2900
+Wire Wire Line
+	3850 3250 3850 3300
+Connection ~ 3850 3300
+Wire Wire Line
+	3850 3300 3850 3350
+Wire Wire Line
+	3350 3000 3450 3000
+Wire Wire Line
+	3450 3000 3450 3300
+Wire Wire Line
+	3450 3300 3850 3300
+Wire Wire Line
+	3850 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 3100
+Wire Wire Line
+	4300 3100 4600 3100
+$Comp
+L Device:R R?
+U 1 1 5ECB87DC
+P 3850 1500
+F 0 "R?" H 3780 1454 50  0000 R CNN
+F 1 "1.2k" H 3780 1545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 1500 50  0001 C CNN
+F 3 "~" H 3850 1500 50  0001 C CNN
+	1    3850 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ECB902C
+P 3850 3100
+F 0 "R?" H 3780 3054 50  0000 R CNN
+F 1 "1.2k" H 3780 3145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 3100 50  0001 C CNN
+F 3 "~" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ECB9314
+P 3650 2900
+F 0 "R?" V 3443 2900 50  0000 C CNN
+F 1 "3.9k" V 3534 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 2900 50  0001 C CNN
+F 3 "~" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
