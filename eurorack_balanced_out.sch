@@ -1,4 +1,164 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Eurorack powered stereo balanced output"
+Date "2020-05-21"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L patchut:THAT1646W16 U?
+U 1 1 5EC6B5E4
+P 5000 1400
+F 0 "U?" H 4675 1867 50  0000 C CNN
+F 1 "THAT1646W16" H 4675 1776 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4850 1750 50  0001 C CNN
+F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4850 1750 50  0001 C CNN
+	1    5000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC6BBAD
+P 5350 1000
+F 0 "C?" V 5098 1000 50  0000 C CNN
+F 1 "10uF" V 5189 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 850 50  0001 C CNN
+F 3 "~" H 5350 1000 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5350 1000 50  0001 C CNN "Mouser"
+	1    5350 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1000 5000 1000
+Wire Wire Line
+	5000 1000 5000 1150
+Wire Wire Line
+	5300 1300 5700 1300
+Wire Wire Line
+	5700 1300 5700 1000
+Wire Wire Line
+	5700 1000 5500 1000
+$Comp
+L Device:C C?
+U 1 1 5EC6C44B
+P 5350 1800
+F 0 "C?" V 5098 1800 50  0000 C CNN
+F 1 "10uF" V 5189 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 1650 50  0001 C CNN
+F 3 "~" H 5350 1800 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5350 1800 50  0001 C CNN "Mouser"
+	1    5350 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1650 5000 1800
+Wire Wire Line
+	5000 1800 5200 1800
+Wire Wire Line
+	5500 1800 5700 1800
+Wire Wire Line
+	5700 1800 5700 1500
+Wire Wire Line
+	5700 1500 5300 1500
+Text GLabel 4800 1850 3    50   Input ~ 0
+Vee
+Text GLabel 4800 950  1    50   Input ~ 0
+Vcc
+$Comp
+L power:GND #PWR?
+U 1 1 5EC6D54F
+P 4400 1700
+F 0 "#PWR?" H 4400 1450 50  0001 C CNN
+F 1 "GND" H 4405 1527 50  0000 C CNN
+F 2 "" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1700 4400 1500
+Wire Wire Line
+	4400 1500 4600 1500
+$Comp
+L patchut:THAT1646W16 U?
+U 1 1 5EC6EB1D
+P 5000 3000
+F 0 "U?" H 4675 3467 50  0000 C CNN
+F 1 "THAT1646W16" H 4675 3376 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4850 3350 50  0001 C CNN
+F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4850 3350 50  0001 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC6EB24
+P 5350 2600
+F 0 "C?" V 5098 2600 50  0000 C CNN
+F 1 "10uF" V 5189 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 2450 50  0001 C CNN
+F 3 "~" H 5350 2600 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5350 2600 50  0001 C CNN "Mouser"
+	1    5350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2600 5000 2600
+Wire Wire Line
+	5000 2600 5000 2750
+Wire Wire Line
+	5300 2900 5700 2900
+Wire Wire Line
+	5700 2900 5700 2600
+Wire Wire Line
+	5700 2600 5500 2600
+$Comp
+L Device:C C?
+U 1 1 5EC6EB30
+P 5350 3400
+F 0 "C?" V 5098 3400 50  0000 C CNN
+F 1 "10uF" V 5189 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 3250 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5350 3400 50  0001 C CNN "Mouser"
+	1    5350 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3250 5000 3400
+Wire Wire Line
+	5000 3400 5200 3400
+Wire Wire Line
+	5500 3400 5700 3400
+Wire Wire Line
+	5700 3400 5700 3100
+Wire Wire Line
+	5700 3100 5300 3100
+Text GLabel 4800 3450 3    50   Input ~ 0
+Vee
+Text GLabel 4800 2550 1    50   Input ~ 0
+Vcc
+$Comp
+L power:GND #PWR?
+U 1 1 5EC6EB3D
+P 4400 3300
+F 0 "#PWR?" H 4400 3050 50  0001 C CNN
+F 1 "GND" H 4405 3127 50  0000 C CNN
+F 2 "" H 4400 3300 50  0001 C CNN
+F 3 "" H 4400 3300 50  0001 C CNN
+	1    4400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3300 4400 3100
+Wire Wire Line
+	4400 3100 4600 3100
 $EndSCHEMATC
