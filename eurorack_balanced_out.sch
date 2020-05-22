@@ -84,65 +84,6 @@ F 3 "" H 3850 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L patchut:THAT1646W16 U?
-U 1 1 5EC6EB1D
-P 5000 3000
-F 0 "U?" H 4675 3467 50  0000 C CNN
-F 1 "THAT1646W16" H 4675 3376 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4850 3350 50  0001 C CNN
-F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4850 3350 50  0001 C CNN
-	1    5000 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC6EB24
-P 5350 2600
-F 0 "C?" V 5098 2600 50  0000 C CNN
-F 1 "10uF" V 5189 2600 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 2450 50  0001 C CNN
-F 3 "~" H 5350 2600 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5350 2600 50  0001 C CNN "Mouser"
-	1    5350 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 2600 5000 2600
-Wire Wire Line
-	5000 2600 5000 2750
-Wire Wire Line
-	5300 2900 5700 2900
-Wire Wire Line
-	5700 2900 5700 2600
-Wire Wire Line
-	5700 2600 5500 2600
-$Comp
-L Device:C C?
-U 1 1 5EC6EB30
-P 5350 3400
-F 0 "C?" V 5098 3400 50  0000 C CNN
-F 1 "10uF" V 5189 3400 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5388 3250 50  0001 C CNN
-F 3 "~" H 5350 3400 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5350 3400 50  0001 C CNN "Mouser"
-	1    5350 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 3250 5000 3400
-Wire Wire Line
-	5000 3400 5200 3400
-Wire Wire Line
-	5500 3400 5700 3400
-Wire Wire Line
-	5700 3400 5700 3100
-Wire Wire Line
-	5700 3100 5300 3100
-Text GLabel 4800 3450 3    50   Input ~ 0
-Vee
-Text GLabel 4800 2550 1    50   Input ~ 0
-Vcc
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5EC6D021
 P 4450 4800
@@ -334,54 +275,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 1700 4300 1700
 $Comp
-L power:GND #PWR?
-U 1 1 5ECB48AD
-P 3850 3350
-F 0 "#PWR?" H 3850 3100 50  0001 C CNN
-F 1 "GND" H 3855 3177 50  0000 C CNN
-F 2 "" H 3850 3350 50  0001 C CNN
-F 3 "" H 3850 3350 50  0001 C CNN
-	1    3850 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5ECB48B3
-P 3150 2900
-F 0 "J?" H 3068 3117 50  0000 C CNN
-F 1 "Conn_01x02" H 3068 3026 50  0000 C CNN
-F 2 "" H 3150 2900 50  0001 C CNN
-F 3 "~" H 3150 2900 50  0001 C CNN
-	1    3150 2900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 2900 3350 2900
-Wire Wire Line
-	3800 2900 3850 2900
-Wire Wire Line
-	3850 2950 3850 2900
-Connection ~ 3850 2900
-Wire Wire Line
-	3850 2900 4600 2900
-Wire Wire Line
-	3850 3250 3850 3300
-Connection ~ 3850 3300
-Wire Wire Line
-	3850 3300 3850 3350
-Wire Wire Line
-	3350 3000 3450 3000
-Wire Wire Line
-	3450 3000 3450 3300
-Wire Wire Line
-	3450 3300 3850 3300
-Wire Wire Line
-	3850 3300 4300 3300
-Wire Wire Line
-	4300 3300 4300 3100
-Wire Wire Line
-	4300 3100 4600 3100
-$Comp
 L Device:R R?
 U 1 1 5ECB87DC
 P 3850 1500
@@ -391,28 +284,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 1500 50  0
 F 3 "~" H 3850 1500 50  0001 C CNN
 	1    3850 1500
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5ECB902C
-P 3850 3100
-F 0 "R?" H 3780 3054 50  0000 R CNN
-F 1 "1.2k" H 3780 3145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 3100 50  0001 C CNN
-F 3 "~" H 3850 3100 50  0001 C CNN
-	1    3850 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5ECB9314
-P 3650 2900
-F 0 "R?" V 3443 2900 50  0000 C CNN
-F 1 "3.9k" V 3534 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 2900 50  0001 C CNN
-F 3 "~" H 3650 2900 50  0001 C CNN
-	1    3650 2900
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6800 1300 5700 1300
@@ -439,41 +310,6 @@ Wire Wire Line
 	6800 1500 6650 1500
 Wire Wire Line
 	6650 1500 6650 1650
-$Comp
-L Connector:AudioJack3 J?
-U 1 1 5ECCD754
-P 7000 3000
-F 0 "J?" H 6720 2933 50  0000 R CNN
-F 1 "AudioJack3" H 6720 3024 50  0000 R CNN
-F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7000 3000 50  0001 C CNN
-F 3 "~" H 7000 3000 50  0001 C CNN
-	1    7000 3000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 2900 5700 2900
-Wire Wire Line
-	6800 3000 6100 3000
-$Comp
-L power:GND #PWR?
-U 1 1 5ECCD75C
-P 6650 3250
-F 0 "#PWR?" H 6650 3000 50  0001 C CNN
-F 1 "GND" H 6655 3077 50  0000 C CNN
-F 2 "" H 6650 3250 50  0001 C CNN
-F 3 "" H 6650 3250 50  0001 C CNN
-	1    6650 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 3100 6650 3100
-Wire Wire Line
-	6650 3100 6650 3250
-Wire Wire Line
-	5700 3100 6100 3100
-Wire Wire Line
-	6100 3100 6100 3000
-Connection ~ 5700 3100
 $Comp
 L Connector:AudioJack3 J?
 U 1 1 5EC84302
