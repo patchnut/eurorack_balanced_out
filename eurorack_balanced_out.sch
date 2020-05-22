@@ -414,17 +414,6 @@ F 3 "~" H 3650 2900 50  0001 C CNN
 	1    3650 2900
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:AudioJack3 J?
-U 1 1 5ECBA746
-P 7000 1400
-F 0 "J?" H 6720 1333 50  0000 R CNN
-F 1 "AudioJack3" H 6720 1424 50  0000 R CNN
-F 2 "" H 7000 1400 50  0001 C CNN
-F 3 "~" H 7000 1400 50  0001 C CNN
-	1    7000 1400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6800 1300 5700 1300
 Connection ~ 5700 1300
@@ -456,7 +445,7 @@ U 1 1 5ECCD754
 P 7000 3000
 F 0 "J?" H 6720 2933 50  0000 R CNN
 F 1 "AudioJack3" H 6720 3024 50  0000 R CNN
-F 2 "" H 7000 3000 50  0001 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7000 3000 50  0001 C CNN
 F 3 "~" H 7000 3000 50  0001 C CNN
 	1    7000 3000
 	-1   0    0    1   
@@ -485,4 +474,15 @@ Wire Wire Line
 Wire Wire Line
 	6100 3100 6100 3000
 Connection ~ 5700 3100
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5EC84302
+P 7000 1400
+F 0 "J?" H 6720 1333 50  0000 R CNN
+F 1 "AudioJack3" H 6720 1424 50  0000 R CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7000 1400 50  0001 C CNN
+F 3 "~" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
