@@ -84,17 +84,6 @@ Wire Wire Line
 Connection ~ 3500 6300
 Wire Wire Line
 	3500 6300 3500 6400
-$Comp
-L power:GND #PWR0102
-U 1 1 5EC6F187
-P 4800 6300
-F 0 "#PWR0102" H 4800 6050 50  0001 C CNN
-F 1 "GND" H 4805 6127 50  0000 C CNN
-F 2 "" H 4800 6300 50  0001 C CNN
-F 3 "" H 4800 6300 50  0001 C CNN
-	1    4800 6300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 6300 2800 6300
 Wire Wire Line
@@ -141,26 +130,20 @@ F 4 " 80-C0805C104K5RACLR" V 4350 6150 50  0001 C CNN "Mouser"
 	1    4350 6150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3600 6000 3900 6000
 Connection ~ 3600 6000
 Connection ~ 3900 6000
 Wire Wire Line
 	3900 6000 4350 6000
 Connection ~ 3600 6600
-Text GLabel 4700 6600 2    50   Input ~ 0
+Text GLabel 5050 6600 2    50   Input ~ 0
 Vee
-Text GLabel 4700 6000 2    50   Input ~ 0
+Text GLabel 5050 6000 2    50   Input ~ 0
 Vcc
-Wire Wire Line
-	4700 6000 4350 6000
 Connection ~ 4350 6000
 Connection ~ 3900 6300
 Wire Wire Line
 	3900 6300 4350 6300
 Connection ~ 4350 6300
-Wire Wire Line
-	4350 6300 4800 6300
 Wire Wire Line
 	3600 6600 3900 6600
 $Comp
@@ -204,8 +187,6 @@ F 4 " 80-C0805C104K5RACLR" V 4350 6450 50  0001 C CNN "Mouser"
 	-1   0    0    1   
 $EndComp
 Connection ~ 4350 6600
-Wire Wire Line
-	4350 6600 4700 6600
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5EC8DDA9
@@ -802,6 +783,67 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 4450 50  
 F 3 "~" H 6850 4450 50  0001 C CNN
 F 4 " 80-C0805C101JAGAUTO " H 6850 4450 50  0001 C CNN "Mouser"
 	1    6850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6000 3900 6000
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5ECC8D2C
+P 4850 6000
+F 0 "#FLG0101" H 4850 6075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 6173 50  0000 C CNN
+F 2 "" H 4850 6000 50  0001 C CNN
+F 3 "~" H 4850 6000 50  0001 C CNN
+	1    4850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5ECC9344
+P 4850 6300
+F 0 "#FLG0102" H 4850 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 6473 50  0000 C CNN
+F 2 "" H 4850 6300 50  0001 C CNN
+F 3 "~" H 4850 6300 50  0001 C CNN
+	1    4850 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5ECD3D4B
+P 4850 6600
+F 0 "#FLG0103" H 4850 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 6773 50  0000 C CNN
+F 2 "" H 4850 6600 50  0001 C CNN
+F 3 "~" H 4850 6600 50  0001 C CNN
+	1    4850 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6300 4850 6300
+Connection ~ 4850 6300
+Wire Wire Line
+	4350 6000 4850 6000
+Connection ~ 4850 6000
+Wire Wire Line
+	4850 6000 5050 6000
+Wire Wire Line
+	4350 6600 4850 6600
+Connection ~ 4850 6600
+Wire Wire Line
+	4850 6600 5050 6600
+Wire Wire Line
+	4850 6300 5150 6300
+$Comp
+L power:GND #PWR0102
+U 1 1 5EC6F187
+P 5150 6300
+F 0 "#PWR0102" H 5150 6050 50  0001 C CNN
+F 1 "GND" H 5155 6127 50  0000 C CNN
+F 2 "" H 5150 6300 50  0001 C CNN
+F 3 "" H 5150 6300 50  0001 C CNN
+	1    5150 6300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
