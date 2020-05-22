@@ -268,27 +268,25 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ECC7C45
-P 6550 1950
-F 0 "#PWR?" H 6550 1700 50  0001 C CNN
-F 1 "GND" H 6555 1777 50  0000 C CNN
-F 2 "" H 6550 1950 50  0001 C CNN
-F 3 "" H 6550 1950 50  0001 C CNN
-	1    6550 1950
+P 6850 2150
+F 0 "#PWR?" H 6850 1900 50  0001 C CNN
+F 1 "GND" H 6855 1977 50  0000 C CNN
+F 2 "" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 1800 6550 1800
-Wire Wire Line
-	6550 1800 6550 1950
+	7450 1800 7300 1800
 $Comp
 L Connector:AudioJack3 J?
 U 1 1 5EC84302
-P 6900 1700
-F 0 "J?" H 6620 1633 50  0000 R CNN
-F 1 "AudioJack3" H 6620 1724 50  0000 R CNN
-F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 6900 1700 50  0001 C CNN
-F 3 "~" H 6900 1700 50  0001 C CNN
-	1    6900 1700
+P 7650 1700
+F 0 "J?" H 7370 1633 50  0000 R CNN
+F 1 "AudioJack3" H 7370 1724 50  0000 R CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7650 1700 50  0001 C CNN
+F 3 "~" H 7650 1700 50  0001 C CNN
+	1    7650 1700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -348,21 +346,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 2150 50  0001 C CNN
 	1    5800 2150
 	0    1    1    0   
 $EndComp
-$Comp
-L Diode:1N4004 D?
-U 1 1 5EC972BD
-P 6000 2150
-F 0 "D?" V 5954 2230 50  0000 L CNN
-F 1 "1N4004" V 6045 2230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 1975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 2150 50  0001 C CNN
-	1    6000 2150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6250 1800 6250 1700
-Wire Wire Line
-	6250 1700 6700 1700
 Wire Wire Line
 	5400 1800 5800 1800
 Wire Wire Line
@@ -398,8 +381,6 @@ Wire Wire Line
 	6000 1400 6000 1600
 Connection ~ 6000 1600
 Wire Wire Line
-	6000 1600 6700 1600
-Wire Wire Line
 	6000 1600 6000 2000
 Wire Wire Line
 	4700 850  4700 1000
@@ -407,4 +388,96 @@ Connection ~ 4700 1000
 Wire Wire Line
 	4700 2550 4700 2400
 Connection ~ 4700 2400
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5EC871B4
+P 6350 1600
+F 0 "FB?" V 6300 1500 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 6450 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6280 1600 50  0001 C CNN
+F 3 "~" H 6350 1600 50  0001 C CNN
+F 4 " 81-BLM21A601F" V 6350 1600 50  0001 C CNN "Mouser"
+	1    6350 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 1600 6000 1600
+$Comp
+L Device:C_Small C?
+U 1 1 5EC892F5
+P 6500 1950
+F 0 "C?" H 6592 1996 50  0000 L CNN
+F 1 "100p" H 6592 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6500 1950 50  0001 C CNN
+F 3 "~" H 6500 1950 50  0001 C CNN
+F 4 " 80-C0805C101JAGAUTO " H 6500 1950 50  0001 C CNN "Mouser"
+	1    6500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1800 7150 1700
+Wire Wire Line
+	7150 1700 7450 1700
+Wire Wire Line
+	6450 1600 6850 1600
+Wire Wire Line
+	6450 1800 6500 1800
+Wire Wire Line
+	6850 2150 6850 2100
+Wire Wire Line
+	6850 2100 7300 2100
+Wire Wire Line
+	7300 1800 7300 2100
+Connection ~ 6850 2100
+Wire Wire Line
+	6850 2100 6850 2050
+Wire Wire Line
+	6850 2100 6500 2100
+Wire Wire Line
+	6500 2100 6500 2050
+Wire Wire Line
+	6500 1850 6500 1800
+Connection ~ 6500 1800
+Wire Wire Line
+	6500 1800 7150 1800
+Wire Wire Line
+	6850 1850 6850 1600
+Connection ~ 6850 1600
+Wire Wire Line
+	6850 1600 7450 1600
+$Comp
+L Diode:1N4004 D?
+U 1 1 5EC972BD
+P 6000 2150
+F 0 "D?" V 5954 2230 50  0000 L CNN
+F 1 "1N4004" V 6045 2230 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 1975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 2150 50  0001 C CNN
+	1    6000 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5ECA915E
+P 6350 1800
+F 0 "FB?" V 6300 1700 50  0000 C CNN
+F 1 "600R @ 100Mhz" V 6450 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6280 1800 50  0001 C CNN
+F 3 "~" H 6350 1800 50  0001 C CNN
+F 4 " 81-BLM21A601F" V 6350 1800 50  0001 C CNN "Mouser"
+	1    6350 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5ECA9863
+P 6850 1950
+F 0 "C?" H 6942 1996 50  0000 L CNN
+F 1 "100p" H 6942 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 1950 50  0001 C CNN
+F 3 "~" H 6850 1950 50  0001 C CNN
+F 4 " 80-C0805C101JAGAUTO " H 6850 1950 50  0001 C CNN "Mouser"
+	1    6850 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
