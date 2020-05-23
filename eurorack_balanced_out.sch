@@ -526,17 +526,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 5050
 	1    5800 5050
 	0    1    -1   0   
 $EndComp
-$Comp
-L Diode:BAV99 D4
-U 1 1 5ED127C4
-P 6200 5050
-F 0 "D4" H 6200 5266 50  0000 C CNN
-F 1 "BAV99" H 6200 5175 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4550 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 5050 50  0001 C CNN
-	1    6200 5050
-	0    1    -1   0   
-$EndComp
 Text GLabel 5800 4550 1    50   Input ~ 0
 Vcc
 Text GLabel 5800 5550 3    50   Input ~ 0
@@ -675,18 +664,6 @@ Wire Wire Line
 	3750 4150 3750 4100
 Wire Wire Line
 	3700 4100 3750 4100
-$Comp
-L Device:C_Small C?
-U 1 1 5ED5C9EB
-P 5100 2050
-F 0 "C?" V 5300 2050 50  0000 C CNN
-F 1 "10u" V 5200 2050 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 2050 50  0001 C CNN
-F 3 "~" H 5100 2050 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5100 2050 50  0001 C CNN "Mouser"
-	1    5100 2050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5200 1800 5300 1800
 Wire Wire Line
@@ -697,10 +674,10 @@ Connection ~ 5300 1800
 Wire Wire Line
 	5300 1800 5500 1800
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5ED62BC9
 P 5100 1350
-F 0 "C?" V 4871 1350 50  0000 C CNN
+F 0 "C5" V 4871 1350 50  0000 C CNN
 F 1 "10u" V 4962 1350 50  0000 C CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 1350 50  0001 C CNN
 F 3 "~" H 5100 1350 50  0001 C CNN
@@ -718,10 +695,10 @@ Connection ~ 5300 1600
 Wire Wire Line
 	5300 1600 5900 1600
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 5ED682A7
 P 5100 3850
-F 0 "C?" V 4871 3850 50  0000 C CNN
+F 0 "C7" V 4871 3850 50  0000 C CNN
 F 1 "10u" V 4962 3850 50  0000 C CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 3850 50  0001 C CNN
 F 3 "~" H 5100 3850 50  0001 C CNN
@@ -730,10 +707,10 @@ F 4 "647-UWP1C100MCL" V 5100 3850 50  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C8
 U 1 1 5ED688A2
 P 5100 4550
-F 0 "C?" V 4871 4550 50  0000 C CNN
+F 0 "C8" V 4871 4550 50  0000 C CNN
 F 1 "10u" V 4962 4550 50  0000 C CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 4550 50  0001 C CNN
 F 3 "~" H 5100 4550 50  0001 C CNN
@@ -796,4 +773,27 @@ Wire Wire Line
 Connection ~ 4350 6000
 Wire Wire Line
 	4350 6000 4850 6000
+$Comp
+L Diode:BAV99 D4
+U 1 1 5ED127C4
+P 6200 5050
+F 0 "D4" H 6200 5266 50  0000 C CNN
+F 1 "BAV99" H 6200 5175 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 5050 50  0001 C CNN
+	1    6200 5050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5ED5C9EB
+P 5100 2050
+F 0 "C6" V 5300 2050 50  0000 C CNN
+F 1 "10u" V 5200 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 2050 50  0001 C CNN
+F 3 "~" H 5100 2050 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5100 2050 50  0001 C CNN "Mouser"
+	1    5100 2050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
