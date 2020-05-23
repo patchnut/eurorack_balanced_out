@@ -53,17 +53,6 @@ Vee
 Text GLabel 4700 1250 1    50   Input ~ 0
 Vcc
 $Comp
-L power:GND #PWR0101
-U 1 1 5EC6D54F
-P 3750 2050
-F 0 "#PWR0101" H 3750 1800 50  0001 C CNN
-F 1 "GND" H 3755 1877 50  0000 C CNN
-F 2 "" H 3750 2050 50  0001 C CNN
-F 3 "" H 3750 2050 50  0001 C CNN
-	1    3750 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5EC6D021
 P 3200 6300
@@ -198,54 +187,10 @@ F 3 "~" H 3050 1600 50  0001 C CNN
 	1    3050 1600
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5EC8E9B6
-P 3550 1600
-F 0 "R1" V 3343 1600 50  0000 C CNN
-F 1 "3.9k" V 3434 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 1600 50  0001 C CNN
-F 3 "~" H 3550 1600 50  0001 C CNN
-	1    3550 1600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3400 1600 3250 1600
-Wire Wire Line
-	3700 1600 3750 1600
-Wire Wire Line
-	3750 1650 3750 1600
-Connection ~ 3750 1600
-Wire Wire Line
-	3750 1600 4500 1600
-Wire Wire Line
-	3750 1950 3750 2000
-Connection ~ 3750 2000
-Wire Wire Line
-	3750 2000 3750 2050
-Wire Wire Line
-	3250 1700 3350 1700
-Wire Wire Line
-	3350 1700 3350 2000
-Wire Wire Line
-	3350 2000 3750 2000
 Wire Wire Line
 	4500 1800 4200 1800
 Wire Wire Line
-	4200 1800 4200 2000
-Wire Wire Line
-	3750 2000 4200 2000
-$Comp
-L Device:R R3
-U 1 1 5ECB87DC
-P 3750 1800
-F 0 "R3" H 3680 1754 50  0000 R CNN
-F 1 "1.2k" H 3680 1845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 1800 50  0001 C CNN
-F 3 "~" H 3750 1800 50  0001 C CNN
-	1    3750 1800
-	-1   0    0    1   
-$EndComp
+	4200 1800 4200 1900
 $Comp
 L power:GND #PWR0104
 U 1 1 5ECC7C45
@@ -406,21 +351,10 @@ F 4 "647-UWP1C100MCL" V 5150 4550 50  0001 C CNN "Mouser"
 	1    5150 4550
 	0    1    1    0   
 $EndComp
-Text GLabel 4700 5050 3    50   Input ~ 0
+Text GLabel 4700 4650 3    50   Input ~ 0
 Vee
-Text GLabel 4700 3350 1    50   Input ~ 0
+Text GLabel 4700 3750 1    50   Input ~ 0
 Vcc
-$Comp
-L power:GND #PWR0105
-U 1 1 5ECBF518
-P 3750 4550
-F 0 "#PWR0105" H 3750 4300 50  0001 C CNN
-F 1 "GND" H 3755 4377 50  0000 C CNN
-F 2 "" H 3750 4550 50  0001 C CNN
-F 3 "" H 3750 4550 50  0001 C CNN
-	1    3750 4550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5ECBF51E
@@ -432,54 +366,8 @@ F 3 "~" H 3050 4100 50  0001 C CNN
 	1    3050 4100
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 5ECBF524
-P 3550 4100
-F 0 "R2" V 3343 4100 50  0000 C CNN
-F 1 "3.9k" V 3434 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 4100 50  0001 C CNN
-F 3 "~" H 3550 4100 50  0001 C CNN
-	1    3550 4100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3400 4100 3250 4100
-Wire Wire Line
-	3700 4100 3750 4100
-Wire Wire Line
-	3750 4150 3750 4100
-Connection ~ 3750 4100
-Wire Wire Line
-	3750 4100 4500 4100
-Wire Wire Line
-	3750 4450 3750 4500
-Connection ~ 3750 4500
-Wire Wire Line
-	3750 4500 3750 4550
-Wire Wire Line
-	3250 4200 3350 4200
-Wire Wire Line
-	3350 4200 3350 4500
-Wire Wire Line
-	3350 4500 3750 4500
 Wire Wire Line
 	4500 4300 4200 4300
-Wire Wire Line
-	4200 4300 4200 4500
-Wire Wire Line
-	3750 4500 4200 4500
-$Comp
-L Device:R R4
-U 1 1 5ECBF538
-P 3750 4300
-F 0 "R4" H 3680 4254 50  0000 R CNN
-F 1 "1.2k" H 3680 4345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 4300 50  0001 C CNN
-F 3 "~" H 3750 4300 50  0001 C CNN
-	1    3750 4300
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5ECBF53E
@@ -660,10 +548,10 @@ F 3 "" H 5150 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAV99 D?
+L Diode:BAV99 D1
 U 1 1 5EC894BA
 P 5800 2550
-F 0 "D?" H 5950 2400 50  0000 C CNN
+F 0 "D1" H 5950 2400 50  0000 C CNN
 F 1 "BAV99" H 5550 2400 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 2050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 2550 50  0001 C CNN
@@ -671,10 +559,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 2550
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:BAV99 D?
+L Diode:BAV99 D3
 U 1 1 5EC9D3B7
 P 6200 2550
-F 0 "D?" H 6200 2766 50  0000 C CNN
+F 0 "D3" H 6200 2766 50  0000 C CNN
 F 1 "BAV99" H 6200 2675 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 2050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 2550 50  0001 C CNN
@@ -722,16 +610,12 @@ Connection ~ 5900 1600
 Wire Wire Line
 	5900 1600 6250 1600
 Wire Wire Line
-	4700 4650 4700 5050
-Wire Wire Line
 	5400 4100 6250 4100
-Wire Wire Line
-	4700 3350 4700 3750
 $Comp
-L Diode:BAV99 D?
+L Diode:BAV99 D2
 U 1 1 5ED127BE
 P 5800 5050
-F 0 "D?" H 5950 4900 50  0000 C CNN
+F 0 "D2" H 5950 4900 50  0000 C CNN
 F 1 "BAV99" H 5550 4900 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 5050 50  0001 C CNN
@@ -739,10 +623,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 5050
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:BAV99 D?
+L Diode:BAV99 D4
 U 1 1 5ED127C4
 P 6200 5050
-F 0 "D?" H 6200 5266 50  0000 C CNN
+F 0 "D4" H 6200 5266 50  0000 C CNN
 F 1 "BAV99" H 6200 5175 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 5050 50  0001 C CNN
@@ -788,4 +672,112 @@ Wire Wire Line
 Connection ~ 5400 4300
 Wire Wire Line
 	5400 4300 6250 4300
+$Comp
+L power:GND #PWR0101
+U 1 1 5EC6D54F
+P 3750 1900
+F 0 "#PWR0101" H 3750 1650 50  0001 C CNN
+F 1 "GND" H 3755 1727 50  0000 C CNN
+F 2 "" H 3750 1900 50  0001 C CNN
+F 3 "" H 3750 1900 50  0001 C CNN
+	1    3750 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 1900
+Wire Wire Line
+	3750 1900 3350 1900
+Wire Wire Line
+	3750 1900 4200 1900
+Wire Wire Line
+	3750 1850 3750 1900
+$Comp
+L Device:R_Small R3
+U 1 1 5ED2B05B
+P 3750 1750
+F 0 "R3" H 3691 1704 50  0000 R CNN
+F 1 "3.9k" H 3691 1795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 1750 50  0001 C CNN
+F 3 "~" H 3750 1750 50  0001 C CNN
+	1    3750 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 1600 3500 1600
+$Comp
+L Device:R_Small R1
+U 1 1 5ED1DD61
+P 3600 1600
+F 0 "R1" V 3404 1600 50  0000 C CNN
+F 1 "3.9k" V 3495 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 1600 50  0001 C CNN
+F 3 "~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1700 3350 1900
+Wire Wire Line
+	3250 1700 3350 1700
+Wire Wire Line
+	3750 1600 4500 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1650 3750 1600
+Wire Wire Line
+	3700 1600 3750 1600
+Wire Wire Line
+	4200 4300 4200 4400
+$Comp
+L power:GND #PWR01
+U 1 1 5ED56EC8
+P 3750 4400
+F 0 "#PWR01" H 3750 4150 50  0001 C CNN
+F 1 "GND" H 3755 4227 50  0000 C CNN
+F 2 "" H 3750 4400 50  0001 C CNN
+F 3 "" H 3750 4400 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 4400
+Wire Wire Line
+	3750 4400 3350 4400
+Wire Wire Line
+	3750 4400 4200 4400
+Wire Wire Line
+	3750 4350 3750 4400
+$Comp
+L Device:R_Small R4
+U 1 1 5ED56ED2
+P 3750 4250
+F 0 "R4" H 3691 4204 50  0000 R CNN
+F 1 "3.9k" H 3691 4295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 4250 50  0001 C CNN
+F 3 "~" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 4100 3500 4100
+$Comp
+L Device:R_Small R2
+U 1 1 5ED56ED9
+P 3600 4100
+F 0 "R2" V 3404 4100 50  0000 C CNN
+F 1 "3.9k" V 3495 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 4100 50  0001 C CNN
+F 3 "~" H 3600 4100 50  0001 C CNN
+	1    3600 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 4200 3350 4400
+Wire Wire Line
+	3250 4200 3350 4200
+Wire Wire Line
+	3750 4100 4500 4100
+Connection ~ 3750 4100
+Wire Wire Line
+	3750 4150 3750 4100
+Wire Wire Line
+	3700 4100 3750 4100
 $EndSCHEMATC
