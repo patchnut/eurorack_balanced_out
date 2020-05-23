@@ -548,14 +548,6 @@ Wire Wire Line
 	5800 4650 5800 4750
 Wire Wire Line
 	6200 5350 6200 5450
-Wire Wire Line
-	6000 5050 5900 5050
-Wire Wire Line
-	5600 5050 5500 5050
-Wire Wire Line
-	5500 5050 5500 4300
-Wire Wire Line
-	5900 5050 5900 4100
 $Comp
 L power:GND #PWR0101
 U 1 1 5EC6D54F
@@ -726,7 +718,7 @@ Wire Wire Line
 	5300 4550 5300 4300
 Connection ~ 5300 4300
 Wire Wire Line
-	5300 4300 6250 4300
+	5300 4300 5500 4300
 Wire Wire Line
 	5200 4100 5300 4100
 Wire Wire Line
@@ -735,7 +727,7 @@ Wire Wire Line
 	5300 3850 5200 3850
 Connection ~ 5300 4100
 Wire Wire Line
-	5300 4100 6250 4100
+	5300 4100 5900 4100
 Wire Wire Line
 	3900 6050 3900 6000
 Wire Wire Line
@@ -796,4 +788,18 @@ F 4 "647-UWP1C100MCL" V 5100 2050 50  0001 C CNN "Mouser"
 	1    5100 2050
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5600 5050 5500 5050
+Wire Wire Line
+	6000 5050 5900 5050
+Wire Wire Line
+	5500 5050 5500 4300
+Connection ~ 5500 4300
+Wire Wire Line
+	5500 4300 6250 4300
+Wire Wire Line
+	5900 5050 5900 4100
+Connection ~ 5900 4100
+Wire Wire Line
+	5900 4100 6250 4100
 $EndSCHEMATC
