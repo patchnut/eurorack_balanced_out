@@ -466,7 +466,7 @@ F 1 "BAV99" H 5550 2400 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 2050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 2550 50  0001 C CNN
 	1    5800 2550
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Diode:BAV99 D3
@@ -477,7 +477,7 @@ F 1 "BAV99" H 6200 2675 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 2050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 2550 50  0001 C CNN
 	1    6200 2550
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Text GLabel 5800 2050 1    50   Input ~ 0
 Vcc
@@ -524,7 +524,7 @@ F 1 "BAV99" H 5550 4900 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 5050 50  0001 C CNN
 	1    5800 5050
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Diode:BAV99 D4
@@ -535,7 +535,7 @@ F 1 "BAV99" H 6200 5175 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 5050 50  0001 C CNN
 	1    6200 5050
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Text GLabel 5800 4550 1    50   Input ~ 0
 Vcc
