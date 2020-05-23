@@ -24,30 +24,6 @@ F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4750 2050 
 	1    4900 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C5
-U 1 1 5EC6BBAD
-P 5150 1350
-F 0 "C5" V 4898 1350 50  0000 C CNN
-F 1 "10uF" V 4989 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5188 1200 50  0001 C CNN
-F 3 "~" H 5150 1350 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5150 1350 50  0001 C CNN "Mouser"
-	1    5150 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5EC6C44B
-P 5150 2050
-F 0 "C6" V 4898 2050 50  0000 C CNN
-F 1 "10uF" V 4989 2050 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5188 1900 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5150 2050 50  0001 C CNN "Mouser"
-	1    5150 2050
-	0    1    1    0   
-$EndComp
 Text GLabel 4700 2150 3    50   Input ~ 0
 Vee
 Text GLabel 4700 1250 1    50   Input ~ 0
@@ -96,7 +72,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 6500 3500 6500
 $Comp
-L Device:CP C1
+L Device:CP_Small C1
 U 1 1 5EC72C83
 P 3900 6150
 F 0 "C1" H 4018 6196 50  0000 L CNN
@@ -108,7 +84,7 @@ F 4 "647-UWT1E220MCL1B" H 3900 6150 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L Device:C_Small C3
 U 1 1 5EC731D9
 P 4350 6150
 F 0 "C3" V 4098 6150 50  0000 C CNN
@@ -121,22 +97,13 @@ F 4 " 80-C0805C104K5RACLR" V 4350 6150 50  0001 C CNN "Mouser"
 $EndComp
 Connection ~ 3600 6000
 Connection ~ 3900 6000
-Wire Wire Line
-	3900 6000 4350 6000
 Connection ~ 3600 6600
 Text GLabel 5050 6600 2    50   Input ~ 0
 Vee
 Text GLabel 5050 6000 2    50   Input ~ 0
 Vcc
-Connection ~ 4350 6000
-Connection ~ 3900 6300
-Wire Wire Line
-	3900 6300 4350 6300
-Connection ~ 4350 6300
-Wire Wire Line
-	3600 6600 3900 6600
 $Comp
-L Device:CP C2
+L Device:CP_Small C2
 U 1 1 5EC7F6E5
 P 3900 6450
 F 0 "C2" H 4018 6496 50  0000 L CNN
@@ -147,9 +114,6 @@ F 4 "647-UWT1E220MCL1B" H 3900 6450 50  0001 C CNN "Mouser"
 	1    3900 6450
 	1    0    0    -1  
 $EndComp
-Connection ~ 3900 6600
-Wire Wire Line
-	3500 6300 3900 6300
 $Comp
 L power:GND #PWR0103
 U 1 1 5EC7FEB8
@@ -161,10 +125,8 @@ F 3 "" H 2800 6300 50  0001 C CNN
 	1    2800 6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 6600 4350 6600
 $Comp
-L Device:C C4
+L Device:C_Small C4
 U 1 1 5EC8D523
 P 4350 6450
 F 0 "C4" V 4098 6450 50  0000 C CNN
@@ -175,7 +137,6 @@ F 4 " 80-C0805C104K5RACLR" V 4350 6450 50  0001 C CNN "Mouser"
 	1    4350 6450
 	-1   0    0    1   
 $EndComp
-Connection ~ 4350 6600
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5EC8DDA9
@@ -216,13 +177,6 @@ F 3 "~" H 7650 1700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5200 1600 5400 1600
-Wire Wire Line
-	5300 1350 5400 1350
-Wire Wire Line
-	5400 1350 5400 1600
-Connection ~ 5400 1600
-Wire Wire Line
 	5000 1350 4900 1350
 Wire Wire Line
 	4900 1350 4900 1450
@@ -230,13 +184,6 @@ Wire Wire Line
 	4900 1950 4900 2050
 Wire Wire Line
 	4900 2050 5000 2050
-Wire Wire Line
-	5400 1800 5400 2050
-Wire Wire Line
-	5400 2050 5300 2050
-Connection ~ 5400 1800
-Wire Wire Line
-	5400 1800 5200 1800
 $Comp
 L Device:Ferrite_Bead_Small FB1
 U 1 1 5EC871B4
@@ -327,30 +274,6 @@ F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4750 4550 
 	1    4900 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C7
-U 1 1 5ECBF509
-P 5150 3850
-F 0 "C7" V 4898 3850 50  0000 C CNN
-F 1 "10uF" V 4989 3850 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5188 3700 50  0001 C CNN
-F 3 "~" H 5150 3850 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5150 3850 50  0001 C CNN "Mouser"
-	1    5150 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5ECBF510
-P 5150 4550
-F 0 "C8" V 4898 4550 50  0000 C CNN
-F 1 "10uF" V 4989 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5188 4400 50  0001 C CNN
-F 3 "~" H 5150 4550 50  0001 C CNN
-F 4 "647-UWP1C100MCL" V 5150 4550 50  0001 C CNN "Mouser"
-	1    5150 4550
-	0    1    1    0   
-$EndComp
 Text GLabel 4700 4650 3    50   Input ~ 0
 Vee
 Text GLabel 4700 3750 1    50   Input ~ 0
@@ -392,13 +315,6 @@ F 3 "~" H 7650 4200 50  0001 C CNN
 	1    7650 4200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5200 4100 5400 4100
-Wire Wire Line
-	5300 3850 5400 3850
-Wire Wire Line
-	5400 3850 5400 4100
-Connection ~ 5400 4100
 Wire Wire Line
 	5000 3850 4900 3850
 Wire Wire Line
@@ -521,16 +437,10 @@ F 3 "~" H 4850 6600 50  0001 C CNN
 	1    4850 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 6300 4850 6300
 Connection ~ 4850 6300
-Wire Wire Line
-	4350 6000 4850 6000
 Connection ~ 4850 6000
 Wire Wire Line
 	4850 6000 5050 6000
-Wire Wire Line
-	4350 6600 4850 6600
 Connection ~ 4850 6600
 Wire Wire Line
 	4850 6600 5050 6600
@@ -574,8 +484,6 @@ Vcc
 Text GLabel 5800 3050 3    50   Input ~ 0
 Vee
 Wire Wire Line
-	5400 1800 5500 1800
-Wire Wire Line
 	5800 2850 5800 2950
 Wire Wire Line
 	5800 2950 6200 2950
@@ -596,8 +504,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 2550 5900 2550
 Wire Wire Line
-	5400 1600 5900 1600
-Wire Wire Line
 	5600 2550 5500 2550
 Wire Wire Line
 	5500 2550 5500 1800
@@ -609,8 +515,6 @@ Wire Wire Line
 Connection ~ 5900 1600
 Wire Wire Line
 	5900 1600 6250 1600
-Wire Wire Line
-	5400 4100 6250 4100
 $Comp
 L Diode:BAV99 D2
 U 1 1 5ED127BE
@@ -663,15 +567,6 @@ Wire Wire Line
 	5500 5050 5500 4300
 Wire Wire Line
 	5900 5050 5900 4100
-Wire Wire Line
-	5200 4300 5400 4300
-Wire Wire Line
-	5300 4550 5400 4550
-Wire Wire Line
-	5400 4550 5400 4300
-Connection ~ 5400 4300
-Wire Wire Line
-	5400 4300 6250 4300
 $Comp
 L power:GND #PWR0101
 U 1 1 5EC6D54F
@@ -780,4 +675,125 @@ Wire Wire Line
 	3750 4150 3750 4100
 Wire Wire Line
 	3700 4100 3750 4100
+$Comp
+L Device:C_Small C?
+U 1 1 5ED5C9EB
+P 5100 2050
+F 0 "C?" V 5300 2050 50  0000 C CNN
+F 1 "10u" V 5200 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 2050 50  0001 C CNN
+F 3 "~" H 5100 2050 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5100 2050 50  0001 C CNN "Mouser"
+	1    5100 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1800 5300 1800
+Wire Wire Line
+	5200 2050 5300 2050
+Wire Wire Line
+	5300 2050 5300 1800
+Connection ~ 5300 1800
+Wire Wire Line
+	5300 1800 5500 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5ED62BC9
+P 5100 1350
+F 0 "C?" V 4871 1350 50  0000 C CNN
+F 1 "10u" V 4962 1350 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 1350 50  0001 C CNN
+F 3 "~" H 5100 1350 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5100 1350 50  0001 C CNN "Mouser"
+	1    5100 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1600 5300 1600
+Wire Wire Line
+	5200 1350 5300 1350
+Wire Wire Line
+	5300 1350 5300 1600
+Connection ~ 5300 1600
+Wire Wire Line
+	5300 1600 5900 1600
+$Comp
+L Device:C_Small C?
+U 1 1 5ED682A7
+P 5100 3850
+F 0 "C?" V 4871 3850 50  0000 C CNN
+F 1 "10u" V 4962 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 3850 50  0001 C CNN
+F 3 "~" H 5100 3850 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5100 3850 50  0001 C CNN "Mouser"
+	1    5100 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5ED688A2
+P 5100 4550
+F 0 "C?" V 4871 4550 50  0000 C CNN
+F 1 "10u" V 4962 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 5100 4550 50  0001 C CNN
+F 3 "~" H 5100 4550 50  0001 C CNN
+F 4 "647-UWP1C100MCL" V 5100 4550 50  0001 C CNN "Mouser"
+	1    5100 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 4300 5300 4300
+Wire Wire Line
+	5200 4550 5300 4550
+Wire Wire Line
+	5300 4550 5300 4300
+Connection ~ 5300 4300
+Wire Wire Line
+	5300 4300 6250 4300
+Wire Wire Line
+	5200 4100 5300 4100
+Wire Wire Line
+	5300 4100 5300 3850
+Wire Wire Line
+	5300 3850 5200 3850
+Connection ~ 5300 4100
+Wire Wire Line
+	5300 4100 6250 4100
+Wire Wire Line
+	3900 6050 3900 6000
+Wire Wire Line
+	3900 6000 4350 6000
+Wire Wire Line
+	3500 6300 3900 6300
+Wire Wire Line
+	3600 6600 3900 6600
+Wire Wire Line
+	3900 6250 3900 6300
+Connection ~ 3900 6300
+Wire Wire Line
+	3900 6300 4350 6300
+Wire Wire Line
+	3900 6300 3900 6350
+Wire Wire Line
+	3900 6550 3900 6600
+Connection ~ 3900 6600
+Wire Wire Line
+	3900 6600 4350 6600
+Wire Wire Line
+	4350 6600 4350 6550
+Connection ~ 4350 6600
+Wire Wire Line
+	4350 6600 4850 6600
+Wire Wire Line
+	4350 6350 4350 6300
+Connection ~ 4350 6300
+Wire Wire Line
+	4350 6300 4850 6300
+Wire Wire Line
+	4350 6300 4350 6250
+Wire Wire Line
+	4350 6050 4350 6000
+Connection ~ 4350 6000
+Wire Wire Line
+	4350 6000 4850 6000
 $EndSCHEMATC
