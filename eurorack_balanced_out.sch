@@ -48,9 +48,9 @@ F 4 "647-UWP1C100MCL" V 5150 2050 50  0001 C CNN "Mouser"
 	1    5150 2050
 	0    1    1    0   
 $EndComp
-Text GLabel 4700 2550 3    50   Input ~ 0
+Text GLabel 4700 2150 3    50   Input ~ 0
 Vee
-Text GLabel 4700 850  1    50   Input ~ 0
+Text GLabel 4700 1250 1    50   Input ~ 0
 Vcc
 $Comp
 L power:GND #PWR0101
@@ -278,8 +278,6 @@ Wire Wire Line
 	5400 1350 5400 1600
 Connection ~ 5400 1600
 Wire Wire Line
-	5400 1600 6000 1600
-Wire Wire Line
 	5000 1350 4900 1350
 Wire Wire Line
 	4900 1350 4900 1450
@@ -295,81 +293,6 @@ Connection ~ 5400 1800
 Wire Wire Line
 	5400 1800 5200 1800
 $Comp
-L Diode:1N4004 D1
-U 1 1 5EC8CCB3
-P 5800 1250
-F 0 "D1" V 5750 900 50  0000 L CNN
-F 1 "1N4004" V 5850 900 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 1075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 1250 50  0001 C CNN
-	1    5800 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4004 D5
-U 1 1 5EC92CE1
-P 6000 1250
-F 0 "D5" V 5954 1330 50  0000 L CNN
-F 1 "1N4004" V 6045 1330 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 1075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 1250 50  0001 C CNN
-	1    6000 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4004 D2
-U 1 1 5EC972B7
-P 5800 2150
-F 0 "D2" V 5750 1800 50  0000 L CNN
-F 1 "1N4004" V 5850 1800 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 1975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 2150 50  0001 C CNN
-	1    5800 2150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 1800 5800 1800
-Wire Wire Line
-	5800 1000 5800 1100
-Wire Wire Line
-	5800 1000 6000 1000
-Wire Wire Line
-	6000 1000 6000 1100
-Wire Wire Line
-	5800 2300 5800 2400
-Wire Wire Line
-	5800 2400 6000 2400
-Wire Wire Line
-	6000 2400 6000 2300
-Wire Wire Line
-	5800 1000 4700 1000
-Wire Wire Line
-	4700 1000 4700 1250
-Connection ~ 5800 1000
-Wire Wire Line
-	5800 2400 4700 2400
-Wire Wire Line
-	4700 2400 4700 2150
-Connection ~ 5800 2400
-Wire Wire Line
-	5800 2000 5800 1800
-Connection ~ 5800 1800
-Wire Wire Line
-	5800 1800 6250 1800
-Wire Wire Line
-	5800 1800 5800 1400
-Wire Wire Line
-	6000 1400 6000 1600
-Connection ~ 6000 1600
-Wire Wire Line
-	6000 1600 6000 2000
-Wire Wire Line
-	4700 850  4700 1000
-Connection ~ 4700 1000
-Wire Wire Line
-	4700 2550 4700 2400
-Connection ~ 4700 2400
-$Comp
 L Device:Ferrite_Bead_Small FB1
 U 1 1 5EC871B4
 P 6350 1600
@@ -381,8 +304,6 @@ F 4 " 81-BLM21A601F" V 6350 1600 50  0001 C CNN "Mouser"
 	1    6350 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6250 1600 6000 1600
 $Comp
 L Device:C_Small C9
 U 1 1 5EC892F5
@@ -426,17 +347,6 @@ Wire Wire Line
 Connection ~ 6850 1600
 Wire Wire Line
 	6850 1600 7450 1600
-$Comp
-L Diode:1N4004 D6
-U 1 1 5EC972BD
-P 6000 2150
-F 0 "D6" V 5954 2230 50  0000 L CNN
-F 1 "1N4004" V 6045 2230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 1975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 2150 50  0001 C CNN
-	1    6000 2150
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB2
 U 1 1 5ECA915E
@@ -602,8 +512,6 @@ Wire Wire Line
 	5400 3850 5400 4100
 Connection ~ 5400 4100
 Wire Wire Line
-	5400 4100 6000 4100
-Wire Wire Line
 	5000 3850 4900 3850
 Wire Wire Line
 	4900 3850 4900 3950
@@ -611,88 +519,6 @@ Wire Wire Line
 	4900 4450 4900 4550
 Wire Wire Line
 	4900 4550 5000 4550
-Wire Wire Line
-	5400 4300 5400 4550
-Wire Wire Line
-	5400 4550 5300 4550
-Connection ~ 5400 4300
-Wire Wire Line
-	5400 4300 5200 4300
-$Comp
-L Diode:1N4004 D3
-U 1 1 5ECBF558
-P 5800 3750
-F 0 "D3" V 5750 3400 50  0000 L CNN
-F 1 "1N4004" V 5850 3400 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 3575 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 3750 50  0001 C CNN
-	1    5800 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4004 D7
-U 1 1 5ECBF55E
-P 6000 3750
-F 0 "D7" V 5954 3830 50  0000 L CNN
-F 1 "1N4004" V 6045 3830 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 3575 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 3750 50  0001 C CNN
-	1    6000 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4004 D4
-U 1 1 5ECBF564
-P 5800 4650
-F 0 "D4" V 5750 4300 50  0000 L CNN
-F 1 "1N4004" V 5850 4300 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 4475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 4650 50  0001 C CNN
-	1    5800 4650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 4300 5800 4300
-Wire Wire Line
-	5800 3500 5800 3600
-Wire Wire Line
-	5800 3500 6000 3500
-Wire Wire Line
-	6000 3500 6000 3600
-Wire Wire Line
-	5800 4800 5800 4900
-Wire Wire Line
-	5800 4900 6000 4900
-Wire Wire Line
-	6000 4900 6000 4800
-Wire Wire Line
-	5800 3500 4700 3500
-Wire Wire Line
-	4700 3500 4700 3750
-Connection ~ 5800 3500
-Wire Wire Line
-	5800 4900 4700 4900
-Wire Wire Line
-	4700 4900 4700 4650
-Connection ~ 5800 4900
-Wire Wire Line
-	5800 4500 5800 4300
-Connection ~ 5800 4300
-Wire Wire Line
-	5800 4300 6250 4300
-Wire Wire Line
-	5800 4300 5800 3900
-Wire Wire Line
-	6000 3900 6000 4100
-Connection ~ 6000 4100
-Wire Wire Line
-	6000 4100 6000 4500
-Wire Wire Line
-	4700 3350 4700 3500
-Connection ~ 4700 3500
-Wire Wire Line
-	4700 5050 4700 4900
-Connection ~ 4700 4900
 $Comp
 L Device:Ferrite_Bead_Small FB3
 U 1 1 5ECBF583
@@ -705,8 +531,6 @@ F 4 " 81-BLM21A601F" V 6350 4100 50  0001 C CNN "Mouser"
 	1    6350 4100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6250 4100 6000 4100
 $Comp
 L Device:C_Small C10
 U 1 1 5ECBF58B
@@ -750,17 +574,6 @@ Wire Wire Line
 Connection ~ 6850 4100
 Wire Wire Line
 	6850 4100 7450 4100
-$Comp
-L Diode:1N4004 D8
-U 1 1 5ECBF5A2
-P 6000 4650
-F 0 "D8" V 5954 4730 50  0000 L CNN
-F 1 "1N4004" V 6045 4730 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 4475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6000 4650 50  0001 C CNN
-	1    6000 4650
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB4
 U 1 1 5ECBF5A9
@@ -846,4 +659,133 @@ F 3 "" H 5150 6300 50  0001 C CNN
 	1    5150 6300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Diode:BAV99 D?
+U 1 1 5EC894BA
+P 5800 2550
+F 0 "D?" H 5950 2400 50  0000 C CNN
+F 1 "BAV99" H 5550 2400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 2050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 2550 50  0001 C CNN
+	1    5800 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:BAV99 D?
+U 1 1 5EC9D3B7
+P 6200 2550
+F 0 "D?" H 6200 2766 50  0000 C CNN
+F 1 "BAV99" H 6200 2675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 2050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 2550 50  0001 C CNN
+	1    6200 2550
+	0    1    1    0   
+$EndComp
+Text GLabel 5800 2050 1    50   Input ~ 0
+Vcc
+Text GLabel 5800 3050 3    50   Input ~ 0
+Vee
+Wire Wire Line
+	5400 1800 5500 1800
+Wire Wire Line
+	5800 2850 5800 2950
+Wire Wire Line
+	5800 2950 6200 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5800 3050
+Wire Wire Line
+	5800 2050 5800 2150
+Wire Wire Line
+	6200 2250 6200 2150
+Wire Wire Line
+	6200 2150 5800 2150
+Connection ~ 5800 2150
+Wire Wire Line
+	5800 2150 5800 2250
+Wire Wire Line
+	6200 2850 6200 2950
+Wire Wire Line
+	6000 2550 5900 2550
+Wire Wire Line
+	5400 1600 5900 1600
+Wire Wire Line
+	5600 2550 5500 2550
+Wire Wire Line
+	5500 2550 5500 1800
+Connection ~ 5500 1800
+Wire Wire Line
+	5500 1800 6250 1800
+Wire Wire Line
+	5900 2550 5900 1600
+Connection ~ 5900 1600
+Wire Wire Line
+	5900 1600 6250 1600
+Wire Wire Line
+	4700 4650 4700 5050
+Wire Wire Line
+	5400 4100 6250 4100
+Wire Wire Line
+	4700 3350 4700 3750
+$Comp
+L Diode:BAV99 D?
+U 1 1 5ED127BE
+P 5800 5050
+F 0 "D?" H 5950 4900 50  0000 C CNN
+F 1 "BAV99" H 5550 4900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 5800 5050 50  0001 C CNN
+	1    5800 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:BAV99 D?
+U 1 1 5ED127C4
+P 6200 5050
+F 0 "D?" H 6200 5266 50  0000 C CNN
+F 1 "BAV99" H 6200 5175 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6200 5050 50  0001 C CNN
+	1    6200 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 5800 4550 1    50   Input ~ 0
+Vcc
+Text GLabel 5800 5550 3    50   Input ~ 0
+Vee
+Wire Wire Line
+	5800 5350 5800 5450
+Wire Wire Line
+	5800 5450 6200 5450
+Connection ~ 5800 5450
+Wire Wire Line
+	5800 5450 5800 5550
+Wire Wire Line
+	5800 4550 5800 4650
+Wire Wire Line
+	6200 4750 6200 4650
+Wire Wire Line
+	6200 4650 5800 4650
+Connection ~ 5800 4650
+Wire Wire Line
+	5800 4650 5800 4750
+Wire Wire Line
+	6200 5350 6200 5450
+Wire Wire Line
+	6000 5050 5900 5050
+Wire Wire Line
+	5600 5050 5500 5050
+Wire Wire Line
+	5500 5050 5500 4300
+Wire Wire Line
+	5900 5050 5900 4100
+Wire Wire Line
+	5200 4300 5400 4300
+Wire Wire Line
+	5300 4550 5400 4550
+Wire Wire Line
+	5400 4550 5400 4300
+Connection ~ 5400 4300
+Wire Wire Line
+	5400 4300 6250 4300
 $EndSCHEMATC
