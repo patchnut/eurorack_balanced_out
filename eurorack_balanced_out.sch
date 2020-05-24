@@ -34,7 +34,7 @@ U 1 1 5EC6D021
 P 3200 6300
 F 0 "J3" H 3500 6800 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2950 6800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3200 6300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3200 6300 50  0001 C CNN
 F 3 "~" H 3200 6300 50  0001 C CNN
 	1    3200 6300
 	1    0    0    -1  
