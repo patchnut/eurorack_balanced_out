@@ -1535,10 +1535,10 @@
     )
   )
 
-  (gr_line (start 110 115) (end 110 150) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 100 115) (end 180 115) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 180 150) (end 100 150) (layer Edge.Cuts) (width 0.05) (tstamp 5ECB2676))
-  (gr_line (start 180 110) (end 180 150) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 120 115) (end 120 150) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 120 115) (end 180 115) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 180 150) (end 120 150) (layer Edge.Cuts) (width 0.05) (tstamp 5ECB2676))
+  (gr_line (start 180 115) (end 180 150) (layer Edge.Cuts) (width 0.05))
 
   (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
