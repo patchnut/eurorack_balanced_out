@@ -21,6 +21,7 @@ F 0 "U1" H 4575 2167 50  0000 C CNN
 F 1 "THAT1646W16" H 4575 2076 50  0000 C CNN
 F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4750 2050 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4750 2050 50  0001 C CNN
+F 4 "887-1646W16-U" H 4900 1700 50  0001 C CNN "Mouser"
 	1    4900 1700
 	1    0    0    -1  
 $EndComp
@@ -36,6 +37,7 @@ F 0 "J3" H 3500 6800 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2950 6800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3200 6300 50  0001 C CNN
 F 3 "~" H 3200 6300 50  0001 C CNN
+F 4 "200-TSS10501TD" H 3200 6300 50  0001 C CNN "Mouser"
 	1    3200 6300
 	1    0    0    -1  
 $EndComp
@@ -145,6 +147,7 @@ F 0 "J1" H 2968 1817 50  0000 C CNN
 F 1 "Conn_01x02" H 2968 1726 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 1600 50  0001 C CNN
 F 3 "~" H 3050 1600 50  0001 C CNN
+F 4 "200-TSW10207TS" H 3050 1600 50  0001 C CNN "Mouser"
 	1    3050 1600
 	-1   0    0    -1  
 $EndComp
@@ -173,6 +176,7 @@ F 0 "J4" H 7370 1633 50  0000 R CNN
 F 1 "AudioJack3" H 7370 1724 50  0000 R CNN
 F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7650 1700 50  0001 C CNN
 F 3 "~" H 7650 1700 50  0001 C CNN
+F 4 "568-NJ3FD-V" H 7650 1700 50  0001 C CNN "Mouser"
 	1    7650 1700
 	-1   0    0    1   
 $EndComp
@@ -271,6 +275,7 @@ F 0 "U2" H 4575 4667 50  0000 C CNN
 F 1 "THAT1646W16" H 4575 4576 50  0000 C CNN
 F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4750 4550 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4750 4550 50  0001 C CNN
+F 4 "887-1646W16-U" H 4900 4200 50  0001 C CNN "Mouser"
 	1    4900 4200
 	1    0    0    -1  
 $EndComp
@@ -286,6 +291,7 @@ F 0 "J2" H 2968 4317 50  0000 C CNN
 F 1 "Conn_01x02" H 2968 4226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 4100 50  0001 C CNN
 F 3 "~" H 3050 4100 50  0001 C CNN
+F 4 "200-TSW10207TS" H 3050 4100 50  0001 C CNN "Mouser"
 	1    3050 4100
 	-1   0    0    -1  
 $EndComp
@@ -312,6 +318,7 @@ F 0 "J5" H 7370 4133 50  0000 R CNN
 F 1 "AudioJack3" H 7370 4224 50  0000 R CNN
 F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NJ3FD-V_Vertical" H 7650 4200 50  0001 C CNN
 F 3 "~" H 7650 4200 50  0001 C CNN
+F 4 "568-NJ3FD-V" H 7650 4200 50  0001 C CNN "Mouser"
 	1    7650 4200
 	-1   0    0    1   
 $EndComp
@@ -577,6 +584,7 @@ F 0 "R3" H 3691 1704 50  0000 R CNN
 F 1 "1.2k" H 3691 1795 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 1750 50  0001 C CNN
 F 3 "~" H 3750 1750 50  0001 C CNN
+F 4 "667-ERJ-S06F1201V" H 3750 1750 50  0001 C CNN "Mouser"
 	1    3750 1750
 	-1   0    0    1   
 $EndComp
@@ -590,6 +598,7 @@ F 0 "R1" V 3404 1600 50  0000 C CNN
 F 1 "3.9k" V 3495 1600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 1600 50  0001 C CNN
 F 3 "~" H 3600 1600 50  0001 C CNN
+F 4 "667-ERJ-6ENF3901V" H 3600 1600 50  0001 C CNN "Mouser"
 	1    3600 1600
 	0    1    1    0   
 $EndComp
@@ -632,6 +641,7 @@ F 0 "R4" H 3691 4204 50  0000 R CNN
 F 1 "1.2k" H 3691 4295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 4250 50  0001 C CNN
 F 3 "~" H 3750 4250 50  0001 C CNN
+F 4 "667-ERJ-S06F1201V" H 3750 4250 50  0001 C CNN "Mouser"
 	1    3750 4250
 	-1   0    0    1   
 $EndComp
@@ -645,6 +655,7 @@ F 0 "R2" V 3404 4100 50  0000 C CNN
 F 1 "3.9k" V 3495 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 4100 50  0001 C CNN
 F 3 "~" H 3600 4100 50  0001 C CNN
+F 4 "667-ERJ-6ENF3901V" H 3600 4100 50  0001 C CNN "Mouser"
 	1    3600 4100
 	0    1    1    0   
 $EndComp
