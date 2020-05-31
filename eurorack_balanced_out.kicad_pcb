@@ -1546,7 +1546,7 @@
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_line (start 111.6584 116.8428) (end 111.6584 123.5964) (layer F.SilkS) (width 0.3))
-  (gr_text "balanced stereo outs" (at 105 -98.6) (layer F.SilkS)
+  (gr_text "balanced stereo outputs" (at 170 116) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_line (start 110 115) (end 110 150) (layer Edge.Cuts) (width 0.05))
