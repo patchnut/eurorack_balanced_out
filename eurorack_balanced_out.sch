@@ -798,9 +798,9 @@ F 4 "80-C0805C104K5RACLR" V 5900 6500 50  0001 C CNN "Mouser"
 	1    5900 6500
 	-1   0    0    1   
 $EndComp
-Text GLabel 5450 6350 1    50   Input ~ 0
+Text GLabel 5450 6400 1    50   Input ~ 0
 Vcc
-Text GLabel 5900 6350 1    50   Input ~ 0
+Text GLabel 5900 6400 1    50   Input ~ 0
 Vcc
 Text GLabel 5450 6950 3    50   Input ~ 0
 Vee
