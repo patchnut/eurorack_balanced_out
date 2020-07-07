@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Eurorack powered stereo balanced output"
 Date "2020-05-21"
-Rev "0.1.0"
+Rev "0.1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
