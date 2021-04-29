@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name eurorack_balanced_out-cache)(type Legacy)(uri ${KIPRJMOD}/eurorack_balanced_out-cache.lib)(options "")(descr ""))
+  (lib (name eurorack_balanced_out-rescue)(type Legacy)(uri ${KIPRJMOD}/eurorack_balanced_out-rescue.lib)(options "")(descr ""))
+)
