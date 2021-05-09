@@ -732,28 +732,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 1100 8150 1050
 $Comp
-L patchut:THAT1646S08 U2
-U 1 1 608C03F2
-P 4550 3600
-F 0 "U2" H 4894 3646 50  0000 L CNN
-F 1 "THAT1646S08" H 4894 3555 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4500 3050 50  0001 C CNN
-F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4400 3950 50  0001 C CNN
-	1    4550 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L patchut:THAT1646S08 U3
-U 1 1 608DF4CF
-P 4550 5300
-F 0 "U3" H 4894 5346 50  0000 L CNN
-F 1 "THAT1646S08" H 4894 5255 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4500 4750 50  0001 C CNN
-F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4400 5650 50  0001 C CNN
-	1    4550 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:AudioJack2_SwitchT J2
 U 1 1 608D5F68
 P 1400 3600
@@ -1172,4 +1150,26 @@ Text Notes 6350 800  0    50   ~ 0
 Input Voltage Protection Clamps
 Wire Notes Line
 	5600 2050 3100 2050
+$Comp
+L patchnut:THAT1646S08 U2
+U 1 1 6098E315
+P 4550 3600
+F 0 "U2" H 4894 3646 50  0000 L CNN
+F 1 "THAT1646S08" H 4894 3555 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4500 3050 50  0001 C CNN
+F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4400 3950 50  0001 C CNN
+	1    4550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L patchnut:THAT1646S08 U3
+U 1 1 60996725
+P 4550 5300
+F 0 "U3" H 4894 5346 50  0000 L CNN
+F 1 "THAT1646S08" H 4894 5255 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4500 4750 50  0001 C CNN
+F 3 "http://www.thatcorp.com/datashts/THAT_1606-1646_Datasheet.pdf" H 4400 5650 50  0001 C CNN
+	1    4550 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
