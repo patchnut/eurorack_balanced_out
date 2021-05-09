@@ -70,7 +70,7 @@ U 1 1 5EC84302
 P 7800 3600
 F 0 "J3" H 7900 3800 50  0000 R CNN
 F 1 "Balanced_out_1" H 7950 3350 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 7800 3600 50  0001 C CNN
+F 2 "patchnut:Jack_3.5mm_ThonkiConn_TRS-PJ366ST_Vertical" H 7800 3600 50  0001 C CNN
 F 3 "~" H 7800 3600 50  0001 C CNN
 F 4 "568-NJ3FD-V" H 7800 3600 50  0001 C CNN "Mouser"
 	1    7800 3600
@@ -171,7 +171,7 @@ U 1 1 5ECBF545
 P 7800 5300
 F 0 "J5" H 7900 5500 50  0000 R CNN
 F 1 "Balanced_out_2" H 7950 5050 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 7800 5300 50  0001 C CNN
+F 2 "patchnut:Jack_3.5mm_ThonkiConn_TRS-PJ366ST_Vertical" H 7800 5300 50  0001 C CNN
 F 3 "~" H 7800 5300 50  0001 C CNN
 F 4 "568-NJ3FD-V" H 7800 5300 50  0001 C CNN "Mouser"
 	1    7800 5300
