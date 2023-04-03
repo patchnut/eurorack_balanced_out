@@ -1,2 +1,4 @@
 (sym_lib_table
+  (version 7)
+  (lib (name "eurorack_balanced_out-rescue")(type "KiCad")(uri "${KIPRJMOD}/eurorack_balanced_out-rescue.kicad_sym")(options "")(descr ""))
 )
